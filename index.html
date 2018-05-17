@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Viacheslav Muzyka">
+    <title>Books List</title>
+    <link rel="stylesheet" href="clusterize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <script src="clusterize.min.js"></script>
+</head>
+<body>
+<div class="background-image"></div>
+<div class="clusterize">
+    <h2 class="header">
+        <span>Test Task for</span>
+        <strong>Casumo</strong>
+    </h2>
+    <div class="controls">
+        <span>
+            <label for="genre-select">Filter by Genre</label>
+            <select id="genre-select" onchange="filterByBookGenre(this)">
+                <option value="">All</option>
+            </select>
+        </span>
+        <div id="results"></div>
+    </div>
+    <div id="scrollArea" class="clusterize-scroll">
+        <div id="headerArea">
+            <strong>#</strong>
+            <strong>Book Name</strong>
+            <strong>Author</strong>
+            <strong>Genre</strong>
+            <strong>Date</strong>
+        </div>
+        <div id="contentArea" class="clusterize-content"></div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
